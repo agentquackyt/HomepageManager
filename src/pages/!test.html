@@ -1,0 +1,8 @@
+@for:nav_links{
+    <li class="nav-item">
+        <a hx-get="/api/html/$label" hx-trigger="click" hx-target="#application" hx-swap="innerHTML" class="nav-link">
+            <span class="nav-icon">$icon</span>
+            %nav_$label
+        </a>
+    </li>
+}

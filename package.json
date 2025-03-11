@@ -1,0 +1,16 @@
+{
+  "name": "homepagemanager",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "bun run --hot index.ts"
+  },
+  "author": "Jonas Gaden",
+  "license": "CAL-1.0",
+  "description": "",
+  "dependencies": {
+    "@types/bun": "^1.2.4",
+    "husky-routing": "^0.0.5",
+    "viewhtml": "^1.0.1"
+  }
+}

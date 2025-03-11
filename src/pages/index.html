@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="%lang">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$app_title</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="flex flex-between">
+            <div class="logo">$site_logo</div>
+            <nav>
+                <ul>
+                    <li><a href="#">%nav_home</a></li>
+                    <li><a href="#">%nav_features</a></li>
+                    <li><a href="#">%nav_pricing</a></li>
+                    <li><a href="#">%nav_contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero grid grid-2-col">
+                <div class="hero-content">
+                    <h1>%hero_title</h1>
+                    <p>%hero_description</p>
+                    <a href="#" class="btn">%cta_button</a>
+                </div>
+                <div class="hero-image">
+                    <img src="$hero_image_url" alt="%hero_image_alt">
+                </div>
+            </section>
+
+            <section class="features">
+                <div class="section-header">
+                    <h2>%features_title</h2>
+                    <p>%features_subtitle</p>
+                </div>
+                <div class="grid grid-3-col">
+                    <div class="card">
+                        <div class="feature-icon">🏫</div>
+                        <h3>%feature_cms_title</h3>
+                        <p>%feature_cms_description</p>
+                    </div>
+                    <div class="card">
+                        <div class="feature-icon">📱</div>
+                        <h3>%feature_responsive_title</h3>
+                        <p>%feature_responsive_description</p>
+                    </div>
+                    <div class="card">
+                        <div class="feature-icon">🔒</div>
+                        <h3>%feature_security_title</h3>
+                        <p>%feature_security_description</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonials">
+                <div class="section-header">
+                    <h2>%testimonials_title</h2>
+                    <p>%testimonials_subtitle</p>
+                </div>
+                <div class="grid grid-2-col">
+                    <div class="card">
+                        <p>"%testimonial_1_text"</p>
+                        <p><strong>$testimonial_1_author</strong> - $testimonial_1_position</p>
+                    </div>
+                    <div class="card">
+                        <p>"%testimonial_2_text"</p>
+                        <p><strong>$testimonial_2_author</strong> - $testimonial_2_position</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="container-full footer-content">
+        <div class="flex flex-between container footer-content" style="padding: 1rem;">
+            <p id="copyright">%copyright_text $current_year</p>
+        </div>
+    </footer>
+
+
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+
+        // Check for saved theme preference or use preferred color scheme
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            body.classList.add('dark-mode');
+        }
+
+        // Add current year for copyright
+        document.querySelector("#copyright").innerText = document.querySelector("#copyright").innerText.replace('$current_year', new Date().getFullYear());
+    </script>
+</body>
+
+</html>

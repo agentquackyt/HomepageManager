@@ -1,0 +1,74 @@
+{
+    "EN": {
+        "email_address": "Email address",
+        "password": "Password",
+        "remember_me": "Remember me",
+        "forgot_password": "Forgot password?",
+        "login": "Login",
+        "have_no_account": "Don't have an account? ",
+        "signup": "Sign up"
+    },
+    "DE": {
+        "email_address": "E-Mail-Adresse",
+        "password": "Passwort",
+        "remember_me": "Angemeldet bleiben",
+        "forgot_password": "Passwort vergessen?",
+        "login": "Anmelden",
+        "have_no_account": "Noch kein Konto? ",
+        "signup": "Registrieren"
+    },
+    "FR": {
+        "email_address": "Adresse e-mail",
+        "password": "Mot de passe",
+        "remember_me": "Se souvenir de moi",
+        "forgot_password": "Mot de passe oublié?",
+        "login": "Connexion",
+        "have_no_account": "Vous n'avez pas de compte? ",
+        "signup": "S'inscrire"
+    },
+    "ES": {
+        "email_address": "Correo electrónico",
+        "password": "Contraseña",
+        "remember_me": "Recordarme",
+        "forgot_password": "¿Olvidó la contraseña?",
+        "login": "Iniciar sesión",
+        "have_no_account": "¿No tiene una cuenta? ",
+        "signup": "Registrarse"
+    },
+    "IT": {
+        "email_address": "Indirizzo email",
+        "password": "Password",
+        "remember_me": "Ricordami",
+        "forgot_password": "Password dimenticata?",
+        "login": "Accedi",
+        "have_no_account": "Non hai un account? ",
+        "signup": "Registrati"
+    },
+    "NL": {
+        "email_address": "E-mailadres",
+        "password": "Wachtwoord",
+        "remember_me": "Onthoud mij",
+        "forgot_password": "Wachtwoord vergeten?",
+        "login": "Inloggen",
+        "have_no_account": "Heb je geen account? ",
+        "signup": "Registreren"
+    },
+    "AR": {
+        "email_address": "عنوان البريد الإلكتروني",
+        "password": "كلمة المرور",
+        "remember_me": "تذكرني",
+        "forgot_password": "هل نسيت كلمة المرور؟",
+        "login": "تسجيل الدخول",
+        "have_no_account": "ليس لديك حساب؟ ",
+        "signup": "اشتراك"
+    },
+    "UK": {
+        "email_address": "Електронна адреса",
+        "password": "Пароль",
+        "remember_me": "Запам'ятати мене",
+        "forgot_password": "Забули пароль?",
+        "login": "Увійти",
+        "have_no_account": "Немає облікового запису? ",
+        "signup": "Зареєструватися"
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | $app_title </title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="dark-mode flex flex-center container h-screen">
+    <div class="login-container flex flex-column flex-center">
+        <div class="logo-container">
+            <div class="logo-circle flex flex-center">DS</div>
+            <h1>$app_title</h1>
+        </div>
+        
+        <form id="loginForm" class="w-full" action="#" method="post">
+            <div class="form-group">
+                <label for="email"> %email_address </label>
+                <input type="email" id="email" name="email" required autofocus>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">%password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            <div class="remember-me">
+                <label>
+                    <input type="checkbox" id="remember" name="remember">
+                    %remember_me
+                </label>
+                <a href="#" class="forgot-password">%forgot_password</a>
+            </div>
+            
+            <button type="submit" class="btn w-full">%login</button>
+        </form>
+        
+        <div class="login-footer">
+            <p>%have_no_account<a href="#">%signup</a></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Add your login logic here
+            console.log('Login attempted');
+            
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const remember = document.getElementById('remember').checked;
+            
+            console.log({ email, password, remember });
+            // Send data to server or handle login
+        });
+    </script>
+</body>
+</html>

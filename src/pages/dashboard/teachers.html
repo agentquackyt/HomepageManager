@@ -1,0 +1,45 @@
+<div class="page-header">
+    <h1>%teacher</h1>
+</div>
+
+<!-- Recent Updates -->
+<div class="card card-secondary">
+    <div class="card-header">
+        <h2 class="card-title">%top_products</h2>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>%order_id</th>
+                <th>%customer</th>
+                <th>%date</th>
+                <th>%amount</th>
+                <th>%status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for:orders{
+                <tr>
+                    <td>#$order_id</td>
+                    <td>$customer_name</td>
+                    <td>$order_date</td>
+                    <td>$order_amount$currency</td>
+                    <td><span class="status status-$state">%$state</span></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<!--
+<div class="card">
+    <div class="card-header">
+        <h2 class="card-title">%notifications</h2>
+    </div>
+    <ul style="list-style: none;">
+        <li style="padding: 10px 0; border-bottom: 1px solid var(--border-color);">$notification_1</li>
+        <li style="padding: 10px 0; border-bottom: 1px solid var(--border-color);">$notification_2</li>
+        <li style="padding: 10px 0; border-bottom: 1px solid var(--border-color);">$notification_3</li>
+        <li style="padding: 10px 0;">$notification_4</li>
+    </ul>
+</div>
+-->

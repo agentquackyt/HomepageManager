@@ -1,0 +1,22 @@
+<div class="page-header">
+    <h1>%recent_news_heading</h1>
+</div>
+
+<!-- Recent Updates -->
+<div class="card card-secondary">
+    <div class="card-header">
+        <button class="btn">%btn_create_news</button>
+    </div>
+    
+    <div class="post-list">
+        @for:news{
+            <div class="card">
+                <div class="post-title">$news_title</div>
+                <div class="post-meta">
+                    <span>%published: $news_date</span>
+                    <span>$news_author</span>
+                </div>
+            </div>
+        }
+    </div>
+</div>

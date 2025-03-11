@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>%dashboard_title</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/htmx.min.js" defer></script>
+</head>
+<body class="dark-mode">
+    <!-- Sidebar -->
+    <aside class="sidebar flex flex-column">
+        <div class="sidebar-header">
+            <div class="logo">$site_logo</div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <ul class="flex flex-column gap-sm">
+                @for:nav_links{
+                    <li class="nav-item">
+                        <a hx-get="/api/html/$label" hx-push-url="/dashboard/$label" hx-trigger="click" hx-target="#application" hx-swap="innerHTML" class="nav-link">
+                            <span class="nav-icon">$icon</span>
+                            %nav_$label
+                        </a>
+                    </li>
+                }
+            </ul>
+        </nav>
+
+        <div class="user-profile">
+            <div class="avatar"></div>
+            <div class="user-info">
+                <div class="user-name">$user_name</div>
+                <div class="user-role">$user_role</div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content" id="application" >
+        <h2 hx-get="$link"
+        hx-trigger="load"
+        hx-target="#application"
+        hx-swap="innerHTML">Loading...</h2>
+    </main>
+</body>
+</html>
