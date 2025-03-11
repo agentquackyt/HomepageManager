@@ -1,0 +1,45 @@
+/* ------------------------------------------------------------
+   Flex Layout Components
+------------------------------------------------------------ */
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.gap-sm {
+    gap: .25rem;
+}
+
+.gap-md {
+    gap: 1rem;
+}
+
+.gap-lg {
+    gap: 2rem;
+}
+
+.two-columns {
+    display: flex;
+    gap: 20px;
+}
+
+.two-columns > div {
+    flex: 1;
+}

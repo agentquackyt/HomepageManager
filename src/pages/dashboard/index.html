@@ -4,7 +4,7 @@
 
 <!-- Stats Grid -->
 <div class="dashboard-grid">
-    <div class="card">
+    <div class="card card-interactive">
         <div class="card-header">
             <h3 class="card-title">%stat_news_articles</h3>
             <span>📰</span>
@@ -13,7 +13,7 @@
         <div class="stat-desc">$news_trend</div>
     </div>
 
-    <div class="card">
+    <div class="card card-interactive">
         <div class="card-header">
             <h3 class="card-title">%stat_teachers</h3>
             <span>👩‍🏫</span>
@@ -22,7 +22,7 @@
         <div class="stat-desc">$teacher_trend</div>
     </div>
 
-    <div class="card">
+    <div class="card card-interactive">
         <div class="card-header">
             <h3 class="card-title">%stat_departments</h3>
             <span>🏫</span>
@@ -31,7 +31,7 @@
         <div class="stat-desc">$department_trend</div>
     </div>
 
-    <div class="card">
+    <div class="card card-interactive">
         <div class="card-header">
             <h3 class="card-title">%stat_visits</h3>
             <span>👥</span>
@@ -50,7 +50,7 @@
     
     <div class="post-list">
         @for:news{
-            <div class="card">
+            <div class="card-teritary card">
                 <div class="post-title">$news_title</div>
                 <div class="post-meta">
                     <span>%published: $news_date</span>

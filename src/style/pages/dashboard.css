@@ -1,0 +1,121 @@
+/* ------------------------------------------------------------
+   Dashboard Page Styles
+------------------------------------------------------------ */
+.sidebar {
+    width: var(--sidebar-width);
+    background-color: var(--bg-dark-secondary);
+    padding: 1.5rem;
+    position: fixed;
+    height: 100vh;
+    color: var(--text-dark);
+}
+
+.sidebar-header {
+    margin-bottom: 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+.sidebar-nav {
+    flex-grow: 1;
+}
+
+.nav-item {
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    color: var(--text-dark-secondary);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    background-color: rgba(77, 132, 226, 0.1);
+    color: var(--accent);
+}
+
+.nav-icon {
+    margin-right: 0.75rem;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    border-top: 1px solid #333;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--accent);
+    margin-right: 0.75rem;
+}
+
+.user-info {
+    font-size: 0.9rem;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.user-role {
+    color: var(--text-dark-secondary);
+    font-size: 0.8rem;
+}
+
+.main-content {
+    margin-left: var(--sidebar-width);
+    padding: 1.5rem;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.search-bar {
+    background-color: var(--bg-dark-secondary);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    color: var(--text-dark);
+    width: 300px;
+}
+
+.stat {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.stat-desc {
+    color: var(--text-dark-secondary);
+    font-size: 0.9rem;
+}
+
+.post-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.post-meta {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-dark-secondary);
+    font-size: 0.8rem;
+}

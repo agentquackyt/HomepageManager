@@ -1,0 +1,28 @@
+/* ------------------------------------------------------------
+   Responsive Styles
+------------------------------------------------------------ */
+@media (max-width: 768px) {
+    .grid-2-col {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-image {
+        order: -1;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .login-container {
+        max-width: 90%;
+    }
+    
+    .logo-circle {
+        width: 100px;
+        height: 100px;
+        font-size: 2rem;
+    }
+}

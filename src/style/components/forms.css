@@ -1,0 +1,59 @@
+/* ------------------------------------------------------------
+   Form Components
+------------------------------------------------------------ */
+.form-group {
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-light-secondary);
+    font-size: 0.9rem;
+}
+
+.dark-mode label {
+    color: var(--text-dark-secondary);
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+.search-bar {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--bg-light);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: var(--text-light);
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.dark-mode input[type="email"],
+.dark-mode input[type="password"],
+.dark-mode input[type="text"],
+.dark-mode .search-bar {
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus,
+.search-bar:focus {
+    border-color: var(--accent);
+    outline: none;
+}
+
+.remember-me {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+}
+
+.remember-me input {
+    margin-right: 0.5rem;
+}

@@ -34,7 +34,16 @@ const router = new Router("")
         return Response.redirect("/dashboard")
     });
 
-router.get("/css/styles.css", (req) => new Response(Bun.file("./src/static/styles.css"), { headers: { "Content-Type": "text/css" } }))
+router.get("/css/styles.css", (req) => new Response(Bun.file("./src/style/styles.css"), { headers: { "Content-Type": "text/css" } }))
+router.get("/css/:folder/:file", async (req, params) => {
+    let { file, folder } = params;
+    if ( !(/\.(css)$/i.test(file))) return new Response("Invalid file type", { status: 400 });
+    console.log(file);
+    if (await Bun.file(`./src/style/${folder}/${file}`).exists()) return new Response(Bun.file(`./src/style/${folder}/${file}`));
+    return new Response("File not found", { status: 404 });
+});
+
+
 router.get("/js/htmx.min.js", (req) => new Response(Bun.file("./src/static/htmx.min.js"), { headers: { "Content-Type": "text/javascript" } }))
 router.get("/img/:file", async (req, params) => {
     let { file } = params;

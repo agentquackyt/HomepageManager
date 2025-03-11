@@ -33,7 +33,7 @@ router
         return getDashboardFile(req, { path: "news", id: params.id })
     })
     .get("/teachers", async (req) => {
-        return getDashboardFile(req, { path: "teacher" })
+        return getDashboardFile(req, { path: "teachers" })
     })
     .get("/department", async (req) => {
         return getDashboardFile(req, { path: "department" })

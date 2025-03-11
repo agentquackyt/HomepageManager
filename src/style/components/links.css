@@ -1,0 +1,16 @@
+/* ------------------------------------------------------------
+   Link Components
+------------------------------------------------------------ */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent);
+}
+
+.forgot-password {
+    margin-left: auto;
+    color: var(--accent);
+}

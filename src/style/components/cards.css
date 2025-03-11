@@ -1,0 +1,94 @@
+/* ------------------------------------------------------------
+   Card Components
+------------------------------------------------------------ */
+.card {
+    background-color: var(--background-secondary);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-secondary {
+    background-color: var(--background-secondary, #f8f9fa);
+    box-shadow: none;
+    padding: 1.5rem;
+}
+
+.card-teritary {
+    background-color: var(--background-tertiary, #f1f3f5);
+    box-shadow: none;
+    padding: 1.5rem;
+}
+
+.card-outlined {
+    background-color: transparent;
+    border: 0.0625rem solid var(--border-color, #e0e0e0);
+    box-shadow: none;
+}
+
+.card-transparent {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.card-flat {
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.card.card-compact {
+    padding: 1rem;
+}
+
+.card.card-p-0 {
+    padding: 0;
+}
+
+.card-elevated {
+    box-shadow: 0 0.5rem 1.5rem var(--shadow-color, rgba(0,0,0,0.1));
+}
+
+.card-interactive {
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-rounded {
+    border-radius: 1rem;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.card-title {
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.25rem;
+    padding-top: 0.75rem;
+    border-top: 0.0625rem solid var(--border-color, #e0e0e0);
+}
+
+/* Card hover effects */
+.card-secondary:hover {
+    transform: translateY(0);
+}
+
+.card-interactive:hover {
+    transform: translateY(-0.3125rem);
+    box-shadow: 0 0.5rem 1rem var(--shadow-color, rgba(0,0,0,0.1));
+}
+
+.card.card-flat:hover,
+.card.card-outlined:hover {
+    transform: none;
+}

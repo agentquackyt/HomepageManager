@@ -3,14 +3,20 @@
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
-    "dev": "bun run --hot index.ts"
+    "style": "cd src/style && bunx postcss _base.css > styles.css && cd ../..",
+    "dev": "bun run style && bun run --hot index.ts"
   },
   "author": "Jonas Gaden",
   "license": "CAL-1.0",
   "description": "",
   "dependencies": {
     "@types/bun": "^1.2.4",
+    "cssnano": "^7.0.6",
+    "cssnano-preset-advanced": "^7.0.6",
     "husky-routing": "^0.0.5",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.1.0",
     "viewhtml": "^1.0.1"
   }
 }

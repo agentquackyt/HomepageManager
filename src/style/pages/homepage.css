@@ -1,0 +1,54 @@
+/* ------------------------------------------------------------
+   Homepage Styles
+------------------------------------------------------------ */
+header {
+    padding: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    font-weight: 500;
+}
+
+.hero {
+    padding: 60px 0;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.features, .testimonials {
+    padding: 80px 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature-icon {
+    color: var(--accent);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+footer {
+    padding: 40px 0;
+    background-color: var(--background-tertiary);
+    margin-top: 80px;
+}
+
+.dark-mode footer {
+    background-color: #0a0a0a;
+}
