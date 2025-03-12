@@ -21,6 +21,7 @@ const data = {
         { news_title: "Sports Day Announcement", news_date: "2024-09-25", news_author: "Michael Torres" },
         { news_title: "New Library Resources", news_date: "2024-09-10", news_author: "Emma Rodriguez" }
     ],
+    currency: "€",
     orders: [ // states: paid, failed, pending
         {order_id: 1, order_date: "2021-01-01", customer_name: "Jonas Gaden", state: "paid", order_amount: 100.00},
         {order_id: 2, order_date: "2021-02-15", customer_name: "Maria Chen", state: "pending", order_amount: 245.99},

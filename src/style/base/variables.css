@@ -50,21 +50,25 @@
     /* Status Colors */
     --success-color: #2ecc71;
     --success-hover: #27ae60;
+    --success-active: #1e8449;
     --success-light: #d4edda;
     --success-dark: #155724;
     
     --warning-color: #f39c12;
     --warning-hover: #e67e22;
+    --warning-active: #d35400;
     --warning-light: #fff3cd;
     --warning-dark: #856404;
     
     --danger-color: #e74c3c;
     --danger-hover: #c0392b;
+    --danger-active: #a82f1f;
     --danger-light: #f8d7da;
     --danger-dark: #721c24;
     
     --info-color: #3498db;
     --info-hover: #2980b9;
+    --info-active: #1f6788;
     --info-light: #d1ecf1;
     --info-dark: #0c5460;
     

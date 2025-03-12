@@ -52,6 +52,15 @@ router
     })
     .get("/events/:id", async (req, params) => {
         return getDashboardFile(req, { path: "events", id: params.id })
+    })
+    .get("/settings", async (req) => {
+        return getDashboardFile(req, { path: "settings" })
+    })
+    .get("/settings/:id", async (req, params) => {
+        return getDashboardFile(req, { path: "settings", id: params.id })
+    })
+    .get("/dashboard", async (req) => {
+        return Response.redirect("/dashboard")
     });
 
 
